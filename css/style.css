@@ -21,6 +21,11 @@ body {
     padding: 50px 15%;
 }
 
+.important {
+    font-weight: bold;
+    color: #A40E11;
+}
+
 .todo-list {
     max-width: 500px;
     width: 100%;
