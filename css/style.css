@@ -45,16 +45,20 @@ h1 {
 
 input {
     width: 400px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 button {
+    width: 400px;
+    width: 100%;
     text-align: center;
     margin-top: 10px;
-    width: 400px;
     padding: 10px;
-    cursor: pointer; 
+    cursor: pointer;
+    font-size: 16px; 
 }
 
 .todo {
