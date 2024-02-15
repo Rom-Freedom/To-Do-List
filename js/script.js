@@ -43,3 +43,20 @@ function displayMessages() {
         todo.innerHTML = displayMessage;
     });
 }
+
+//Event to look where we put a checkbox
+todo.addEventListener('change', function(event) {
+    let idInput = (event.target.getAttribute('id'));
+    //Search a label with the for value
+    let forLabel = todo.querySelector('[for='+ idInput +']');
+    //To get text for label(innerHTML)
+    let valueLabel = forLabel.innerHTML;
+
+    //look for this value into todoList
+    todoList.forEach(function(item){
+        if (item.todo === valueLabel) {
+            item.checked = !item.checked;
+            localStorage.setItem('todo', JSON.stringify(todoList));
+        }
+    });
+});
